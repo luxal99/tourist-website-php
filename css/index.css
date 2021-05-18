@@ -112,3 +112,7 @@ li {
 .input-group {
     margin: 2em 0;
 }
+
+input:invalid {
+    border: 1px solid red;
+}

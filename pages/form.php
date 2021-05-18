@@ -4,14 +4,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $sql = "insert into tourist_info(first_name, last_name, email) values ('" . $_POST['firstName'] . "','" . $_POST['lastName'] . "','" . $_POST['email'] . "')";
     /** @var TYPE_NAME $conn */
     if ($conn->query($sql) === TRUE) {
+
         $select_last = "select MAX(id) as 'id' from tourist_info;";
         $result = $conn->query($select_last);
         $row = $result->fetch_assoc();
         $opinion_sql = "insert into opinions(id_tourist,website_opinion,location_opinion) VALUES ('" . $row["id"] . "','" . $_POST["websiteOpinion"] . "','" . $_POST["locationOpinion"] . "')";
 
         $conn->query($opinion_sql);
-
-
     }
 }
 ?>
@@ -73,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="">First name</span>
                             </div>
-                            <input name="firstName" type="text" placeholder="Marko" class="form-control">
+                            <input pattern="[A-Za-z]{3,}" name="firstName" type="text" placeholder="Marko" class="form-control" />
                         </div>
                     </div>
                     <div class="col-sm">
@@ -81,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="">Last name</span>
                             </div>
-                            <input name="lastName" type="text" placeholder="Jankovic" class="form-control">
+                            <input name="lastName" pattern="[A-Za-z]{3,}"  type="text" placeholder="Jankovic" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -89,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">@</span>
                     </div>
-                    <input name="email" type="text" class="form-control" placeholder="mail@example.com"
+                    <input name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="text" class="form-control" placeholder="mail@example.com"
                            aria-label="Username"
                            aria-describedby="basic-addon1">
                 </div>
