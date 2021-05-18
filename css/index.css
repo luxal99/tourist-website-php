@@ -32,7 +32,7 @@ nav a {
 }
 
 .header p {
-    color: #00c3f6;
+    color: #bc4e9c;
     font-size: 28px;
 }
 
@@ -80,7 +80,7 @@ li {
 
 .footer {
     height: 50vh;
-    background-color: #00c3f6;
+    background: linear-gradient(to right, #f80759, #bc4e9c);
 }
 
 .white {

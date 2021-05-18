@@ -1,1 +1,29 @@
-@import "css/global.css";
+@import "../css/global.css";
+
+nav a {
+    color: #fff !important;
+}
+
+body {
+    background: #bc4e9c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.personal-img {
+    border-radius: 50%
+}
+
+.container {
+    background-color: #fff;
+    -webkit-box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
+    margin-top: 10em;
+    padding: 5em 3em;
+}
+
+p {
+    padding-top: 2em;
+}

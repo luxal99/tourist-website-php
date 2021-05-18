@@ -17,7 +17,7 @@ h5, h6, p, li, a {
 .default-btn {
     border: 1px solid transparent;
     border-radius: 5px;
-    background-color: #00c3f6;
+    background: linear-gradient(to right, #f80759, #bc4e9c);
     color: #fff;
     padding: 0.5em 0;
     width: 300px;
@@ -44,6 +44,6 @@ h5, h6, p, li, a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #00c3f6;
+    background: linear-gradient(to right, #f80759, #bc4e9c);
     border-radius: 10px;
 }

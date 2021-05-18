@@ -24,11 +24,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="icon" href="../assets/img/nis-grb-veliki1.png">
+    <link rel="stylesheet" href="../css/cv.css">
     <title>About me</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light ">
-    <a class="navbar-brand" href="../index.php"><img class="img-fluid" src="../assets/img/nis-grb-veliki1.png" width="50px"></a>
+    <a class="navbar-brand" href="../index.php"><img class="img-fluid" src="../assets/img/nis-grb-veliki1.png"
+                                                     width="50px"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,10 +38,29 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-item nav-link" href="pages/cv.php">About me</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link" href="../pages/form.php">Leave a message</a>
             <a class="nav-item nav-link disabled" href="#">Disabled</a>
         </div>
     </div>
 </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-6 personal-info">
+            <h1>Marija Đorđević</h1>
+            <h5>Date of birth: <b>18.09.1999</b></h5>
+            <h5>Place of birth: <b>Niš</b></h5>
+            <h5>High school: <b>Prva niška gimnazija Stevan Sremac</b></h5>
+            <h5>University: <b>University of NOva Gorica, 3rd year student of Engineering and Managment</b></h5>
+            <h5>Date of birth: <b>18.09.1999</b></h5>
+        </div>
+        <div class="col-6 text-right">
+            <img class="img-fluid personal-img" src="../assets/img/f1.jpg">
+        </div>
+    </div>
+    <p>My mind is more talkative than my mouth.
+        I love challanges, graduated from a special language department and then threw myself into studying
+        engineering...
+        I will never fit in. That’s one of my best qualities.</p>
+</div>
 </body>
 </html>
