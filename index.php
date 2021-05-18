@@ -44,10 +44,10 @@
     <div class="text-center">
         <h1>Dobrodošli u Niš</h1>
         <p>Nadamo se da ćemo ispuniti sva Vaša očekivanja</p>
-        <button class="default-btn">Više informacija</button>
+        <button onclick="location.href='#container'" class="default-btn">Više informacija</button>
     </div>
 </div>
-<div class="container">
+<div id="container" class="container main-container">
     <div class="row">
         <div class="col-sm">
             <h1 style="padding-top: 2em">Niška tvrđava</h1>
@@ -97,20 +97,65 @@
             </li>
         </ul>
     </div>
-    <div class="swiper-container mySwiper">
+    <div class="swiper-container mySwiper" style="margin-top: 10em">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">
+                <img src="assets/img/kazandzijsko-sokace-tinkers-alley-1170x521.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/park-svetog-Save-u-Nisu.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/Saborna_crkva_u_Nisu3.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/1280x0_MEDIJANA-MOZAIK-VANJA-KESER-JV14.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/Delta-Planet-Niš2.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/NisGradGmaps.jpg">
+            </div>
+
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <h1 class="white">Nas zanima Vaše mišljenje</h1>
+        <p class="white">Ukoliko si posetio naš grad, ostavi komentar bio on pozitivan ili loš. Takođe možeš oceniti i
+            naš sajt kako
+            bi znali da li smo na pravilan način predstavili grad Niš</p>
+        <div class="form">
+            <h3>Kontakt forma</h3>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="">Ime</span>
+                </div>
+                <input type="text" placeholder="Marko" class="form-control">
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="">Prezime</span>
+                </div>
+                <input type="text" placeholder="Jankovic" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="mail@example.com" aria-label="Username"
+                       aria-describedby="basic-addon1">
+            </div>
+
+            <div style="margin-top: 3em">
+                <button class="default-btn" style="width: 200px;padding: .3em 0">Pošalji</button>
+            </div>
+
+        </div>
     </div>
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -122,6 +167,9 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        slidesPerView: 2,
+        spaceBetween: 50,
+        loop: true
     });
 </script>
 </body>
