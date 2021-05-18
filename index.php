@@ -1,11 +1,4 @@
-<?php
-include "./config/config.php";
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    $sql = "insert into tourist_info(first_name, last_name, email) values ('" . $_POST['firstName'] . "','" . $_POST['lastName'] . "','" . $_POST['email'] . "')";
-    /** @var TYPE_NAME $conn */
-    $conn->query($sql);
-}
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">

@@ -3,7 +3,14 @@ include "../config/config.php";
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $sql = "insert into tourist_info(first_name, last_name, email) values ('" . $_POST['firstName'] . "','" . $_POST['lastName'] . "','" . $_POST['email'] . "')";
     /** @var TYPE_NAME $conn */
-    $conn->query($sql);
+    if ($conn->query($sql) === TRUE) {
+        $select_last = "select MAX(id) from tourist_info";
+        $result = $conn->query($select_last);
+        $row = $result->fetch_assoc();
+
+        echo $row[0];
+
+    }
 }
 ?>
 
@@ -24,8 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
     <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="../css/form.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -36,7 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <body>
 <div class="footer">
     <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="../index.php"><img class="img-fluid" src="../assets/img/nis-grb-veliki1.png" width="50px"></a>
+        <a class="navbar-brand" href="../index.php"><img class="img-fluid" src="../assets/img/nis-grb-veliki1.png"
+                                                         width="50px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
