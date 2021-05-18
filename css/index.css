@@ -1,0 +1,48 @@
+/** @format */
+
+@import "./fonts.css";
+.header {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+      354deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.14049369747899154) 100%
+    ),
+    url("../assets/img/DSC_0173-3-02-1280x853.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.header h1 {
+  font-family: "Pattaya", sans-serif;
+  color: white;
+  font-size: 60px !important;
+  padding-top: 5em;
+}
+nav a {
+  color: #fff !important;
+}
+.header p {
+  font-family: "Raleway", sans-serif;
+  color: #00c3f6;
+  font-size: 28px;
+}
+button {
+  font-family: "Raleway", sans-serif !important;
+}
+
+.default-btn {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #00c3f6;
+  color: #fff;
+  padding: 0.5em 0;
+  width: 300px;
+  -webkit-transition: 0.3s linear;
+  cursor: pointer;
+  font-weight: bold;
+}
+.default-btn:hover {
+  background-color: #00a6cf;
+  transition: 0.5s linear;
+}
