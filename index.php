@@ -1,3 +1,12 @@
+<?php
+include "./config/config.php";
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    $sql = "insert into tourist_info(first_name, last_name, email) values ('" . $_POST['firstName'] . "','" . $_POST['lastName'] . "','" . $_POST['email'] . "')";
+    /** @var TYPE_NAME $conn */
+    $conn->query($sql);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -130,31 +139,32 @@
             naš sajt kako
             bi znali da li smo na pravilan način predstavili grad Niš</p>
         <div class="form">
-            <h3>Kontakt forma</h3>
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="">Ime</span>
+            <form method="post">
+                <h3>Kontakt forma</h3>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="">Ime</span>
+                    </div>
+                    <input name="firstName" type="text" placeholder="Marko" class="form-control">
                 </div>
-                <input type="text" placeholder="Marko" class="form-control">
-            </div>
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="">Prezime</span>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="">Prezime</span>
+                    </div>
+                    <input name="lastName" type="text" placeholder="Jankovic" class="form-control">
                 </div>
-                <input type="text" placeholder="Jankovic" class="form-control">
-            </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">@</span>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input name="email" type="text" class="form-control" placeholder="mail@example.com"
+                           aria-label="Username"
+                           aria-describedby="basic-addon1">
                 </div>
-                <input type="text" class="form-control" placeholder="mail@example.com" aria-label="Username"
-                       aria-describedby="basic-addon1">
-            </div>
-
-            <div style="margin-top: 3em">
-                <button class="default-btn" style="width: 200px;padding: .3em 0">Pošalji</button>
-            </div>
-
+                <div style="margin-top: 3em">
+                    <button type="submit" class="default-btn" style="width: 200px;padding: .3em 0">Pošalji</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
