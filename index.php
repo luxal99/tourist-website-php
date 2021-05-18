@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="pages/cv.php">About me</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link" href="pages/form.php">Leave a message</a>
                 <a class="nav-item nav-link disabled" href="#">Disabled</a>
             </div>
         </div>
@@ -132,41 +132,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <div class="swiper-button-prev"></div>
     </div>
 </div>
-<div class="footer">
-    <div class="container">
-        <h1 class="white">Nas zanima Vaše mišljenje</h1>
-        <p class="white">Ukoliko si posetio naš grad, ostavi komentar bio on pozitivan ili loš. Takođe možeš oceniti i
-            naš sajt kako
-            bi znali da li smo na pravilan način predstavili grad Niš</p>
-        <div class="form">
-            <form method="post">
-                <h3>Kontakt forma</h3>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="">Ime</span>
-                    </div>
-                    <input name="firstName" type="text" placeholder="Marko" class="form-control">
-                </div>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="">Prezime</span>
-                    </div>
-                    <input name="lastName" type="text" placeholder="Jankovic" class="form-control">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                    </div>
-                    <input name="email" type="text" class="form-control" placeholder="mail@example.com"
-                           aria-label="Username"
-                           aria-describedby="basic-addon1">
-                </div>
-                <div style="margin-top: 3em">
-                    <button type="submit" class="default-btn" style="width: 200px;padding: .3em 0">Pošalji</button>
-                </div>
-            </form>
-        </div>
-    </div>
+<div class="footer text-center">
+    <h1 class="white" style="font-size: 80px;padding-top: 2em">Leave a message...</h1>
+    <button class="secondary-btn" onclick="location.href='/pages/form.php'">Go to form </button>
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

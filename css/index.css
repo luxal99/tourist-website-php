@@ -1,6 +1,6 @@
 /** @format */
 
-@import "./fonts.css";
+@import "./global.css";
 @import "./swipper.css";
 
 html {
@@ -36,21 +36,6 @@ nav a {
     font-size: 28px;
 }
 
-button {
-    font-family: "Raleway", sans-serif !important;
-}
-
-.default-btn {
-    border: 1px solid transparent;
-    border-radius: 5px;
-    background-color: #00c3f6;
-    color: #fff;
-    padding: 0.5em 0;
-    width: 300px;
-    -webkit-transition: 0.3s linear;
-    cursor: pointer;
-    font-weight: bold;
-}
 
 .default-btn:hover {
     background-color: #00a6cf;
@@ -103,7 +88,7 @@ li {
 }
 
 .footer {
-    min-height: 50vh;
+    height: 50vh;
     background-color: #00c3f6;
 }
 

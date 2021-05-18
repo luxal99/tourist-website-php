@@ -1,0 +1,40 @@
+@import "../css/global.css";
+.footer {
+    min-height: 100vh;
+    background-color: #00c3f6;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.footer .container h1 {
+    padding-top: 2em;
+}
+
+.form {
+    -webkit-box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 4em 3em;
+    margin-top: 2em;
+}
+
+.footer .container {
+    padding-bottom: 10em;
+}
+
+.footer .container .form h3 {
+    font-family: "Pattaya", sans-serif !important;
+}
+
+.input-group {
+    margin: 2em 0;
+}
+
+nav a {
+    color: #fff !important;
+    font-weight: bold;
+}
