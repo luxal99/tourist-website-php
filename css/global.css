@@ -47,3 +47,8 @@ h5, h6, p, li, a {
     background: linear-gradient(to right, #f80759, #bc4e9c);
     border-radius: 10px;
 }
+
+.divider {
+    background-color: #eee;
+    height: 1px;
+}

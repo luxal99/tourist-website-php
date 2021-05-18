@@ -37,6 +37,8 @@ if (!$_COOKIE['token']) {
 </head>
 <body>
 <div class="container">
+    <h1 class="header-h1">Opinions overview</h1>
+    <div class="divider"></div>
     <?php
     $result = $conn->query("select opinions.id, ti.first_name, ti.last_name, ti.email, location_opinion, website_opinion,created_date from opinions join tourist_info ti on ti.id = opinions.id_tourist ");
 
