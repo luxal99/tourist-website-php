@@ -1,2 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Raleway:wght@200;300;400;600&display=swap');
+
+h1 {
+    font-family: "Pattaya", sans-serif !important;
+}
+
+p,li {
+    font-family: "Raleway", sans-serif;
+}
