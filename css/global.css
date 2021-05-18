@@ -25,6 +25,7 @@ p, li, a {
     cursor: pointer;
     font-weight: bold;
 }
+
 .secondary-btn {
     border: 1px solid transparent;
     border-radius: 5px;
@@ -35,4 +36,14 @@ p, li, a {
     -webkit-transition: 0.3s linear;
     cursor: pointer;
     font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    height: 1em;
+    background-color: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00c3f6;
+    border-radius: 10px;
 }

@@ -56,15 +56,6 @@ img {
     padding: 15em 0;
 }
 
-::-webkit-scrollbar {
-    height: 1em;
-    background-color: #121212;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #00c3f6;
-    border-radius: 10px;
-}
 
 .facts {
     -webkit-box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);

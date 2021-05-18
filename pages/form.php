@@ -4,11 +4,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $sql = "insert into tourist_info(first_name, last_name, email) values ('" . $_POST['firstName'] . "','" . $_POST['lastName'] . "','" . $_POST['email'] . "')";
     /** @var TYPE_NAME $conn */
     if ($conn->query($sql) === TRUE) {
-        $select_last = "select MAX(id) from tourist_info";
+        $select_last = "select MAX(id) as 'id' from tourist_info;";
         $result = $conn->query($select_last);
         $row = $result->fetch_assoc();
+        $opinion_sql = "insert into opinions(id_tourist,website_opinion,location_opinion) VALUES ('" . $row["id"] . "','" . $_POST["websiteOpinion"] . "','" . $_POST["locationOpinion"] . "')";
 
-        echo $row[0];
+        $conn->query($opinion_sql);
+
 
     }
 }
@@ -58,26 +60,32 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         </div>
     </nav>
     <div class="container">
-        <h1 class="white">Nas zanima Vaše mišljenje</h1>
-        <p class="white">Ukoliko si posetio naš grad, ostavi komentar bio on pozitivan ili loš. Takođe možeš oceniti i
-            naš sajt kako
-            bi znali da li smo na pravilan način predstavili grad Niš</p>
+        <h1 class="white">We would love to hear your opinion</h1>
+        <p class="white">If you have visited our city, leave a comment whether it is positive or bad. You can also rate
+            our site how
+            they would know if we presented the city of Nis in the right way</p>
         <div class="form">
             <form method="post">
-                <h3>Kontakt forma</h3>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="">Ime</span>
+                <h3>Contact form</h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">First name</span>
+                            </div>
+                            <input name="firstName" type="text" placeholder="Marko" class="form-control">
+                        </div>
                     </div>
-                    <input name="firstName" type="text" placeholder="Marko" class="form-control">
+                    <div class="col-sm">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Last name</span>
+                            </div>
+                            <input name="lastName" type="text" placeholder="Jankovic" class="form-control">
+                        </div>
+                    </div>
                 </div>
                 <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="">Prezime</span>
-                    </div>
-                    <input name="lastName" type="text" placeholder="Jankovic" class="form-control">
-                </div>
-                <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">@</span>
                     </div>
@@ -85,8 +93,18 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                            aria-label="Username"
                            aria-describedby="basic-addon1">
                 </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Location opinion</label>
+                    <textarea name="locationOpinion" class="form-control" id="exampleFormControlTextarea1"
+                              rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea2">Website opinion</label>
+                    <textarea class="form-control" name="websiteOpinion" id="exampleFormControlTextarea2"
+                              rows="3"></textarea>
+                </div>
                 <div style="margin-top: 3em">
-                    <button type="submit" class="default-btn" style="width: 200px;padding: .3em 0">Pošalji</button>
+                    <button type="submit" class="default-btn" style="width: 200px;padding: .3em 0">Send</button>
                 </div>
             </form>
         </div>
