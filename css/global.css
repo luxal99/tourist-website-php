@@ -10,8 +10,8 @@ button {
     box-shadow: 8px 14px 13px -17px rgb(0 0 0);
 }
 
-p, li, a {
-    font-family: "Raleway", sans-serif;
+h5, h6, p, li, a {
+    font-family: "Raleway", sans-serif !important;
 }
 
 .default-btn {
