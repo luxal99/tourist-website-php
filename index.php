@@ -73,7 +73,7 @@
     </div>
     <div class="facts">
         <h1>
-            Zanimljive činjenice
+            Interesting facts
         </h1>
         <ul>
             <li>The name Nis comes from the Roman name "Nais", "Naissus"</b></li>
