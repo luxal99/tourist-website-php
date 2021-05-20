@@ -1,4 +1,4 @@
-@import "../css/global.css";
+@import "global.css";
 .footer {
     min-height: 100vh;
     background: #bc4e9c; /* fallback for old browsers */
