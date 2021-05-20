@@ -76,7 +76,7 @@ li {
 }
 
 .footer {
-    height: 50vh;
+    min-height: 50vh;
     background: linear-gradient(to right, #f80759, #bc4e9c);
 }
 
@@ -112,4 +112,19 @@ li {
 
 input:invalid {
     border: 1px solid red;
+}
+
+@media screen and (max-width: 960px) {
+    .main-container {
+        padding: 0;
+    }
+
+    .footer {
+        margin-top: 3em;
+        height: 100vh;
+    }
+
+    .header h1 {
+        padding-top: 2em;
+    }
 }
