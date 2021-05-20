@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -102,22 +100,23 @@
     <div class="swiper-container mySwiper" style="margin-top: 10em">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="assets/img/kazandzijsko-sokace-tinkers-alley-1170x521.jpg">
+                <img src="assets/img/kazandzijsko-sokace-tinkers-alley-1170x521.jpg" id="first-picture"
+                     onclick="showBigPicture(event)">
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/park-svetog-Save-u-Nisu.jpg">
+                <img src="assets/img/park-svetog-Save-u-Nisu.jpg" onclick="showBigPicture(event)">
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/Saborna_crkva_u_Nisu3.jpg">
+                <img src="assets/img/Saborna_crkva_u_Nisu3.jpg" onclick="showBigPicture(event)">
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/1280x0_MEDIJANA-MOZAIK-VANJA-KESER-JV14.jpg">
+                <img src="assets/img/1280x0_MEDIJANA-MOZAIK-VANJA-KESER-JV14.jpg" onclick="showBigPicture(event)">
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/Delta-Planet-Niš2.jpg">
+                <img src="assets/img/Delta-Planet-Niš2.jpg" onclick="showBigPicture(event)">
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/NisGradGmaps.jpg">
+                <img src="assets/img/NisGradGmaps.jpg" onclick="showBigPicture(event)">
             </div>
 
         </div>
@@ -127,7 +126,7 @@
 </div>
 <div class="footer text-center">
     <h1 class="white" style="font-size: 80px;padding-top: 2em">Leave a message...</h1>
-    <button class="secondary-btn" onclick="location.href='/pages/form.php'">Go to form </button>
+    <button class="secondary-btn" onclick="location.href='/pages/form.php'">Go to form</button>
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -142,6 +141,11 @@
         spaceBetween: 50,
         loop: true
     });
+
+    function showBigPicture($event) {
+        location.href = `pages/big-picture.php?q=${$event.target.src}`;
+
+    }
 </script>
 </body>
 

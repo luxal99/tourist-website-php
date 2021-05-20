@@ -31,6 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link
             rel="stylesheet"
             href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -64,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             our site how
             they would know if we presented the city of Nis in the right way</p>
         <div class="form">
-            <form method="post">
+            <form method="post" id="opinionForm">
                 <h3>Contact form</h3>
                 <div class="row">
                     <div class="col-sm">
@@ -72,7 +74,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="">First name</span>
                             </div>
-                            <input pattern="[A-Za-z]{3,}" name="firstName" type="text" placeholder="Marko" class="form-control" />
+                            <input pattern="[A-Za-z]{3,}" name="firstName" type="text" placeholder="Marko"
+                                   class="form-control"/>
                         </div>
                     </div>
                     <div class="col-sm">
@@ -80,7 +83,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="">Last name</span>
                             </div>
-                            <input name="lastName" pattern="[A-Za-z]{3,}"  type="text" placeholder="Jankovic" class="form-control">
+                            <input name="lastName" pattern="[A-Za-z]{3,}" type="text" placeholder="Jankovic"
+                                   class="form-control">
                         </div>
                     </div>
                 </div>
@@ -88,13 +92,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">@</span>
                     </div>
-                    <input name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="text" class="form-control" placeholder="mail@example.com"
+                    <input name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="text"
+                           class="form-control" placeholder="mail@example.com"
                            aria-label="Username"
                            aria-describedby="basic-addon1">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Location opinion</label>
-                    <textarea name="locationOpinion" class="form-control" id="exampleFormControlTextarea1"
+                    <textarea name="locationOpinion" class="form-control"
+                              id="exampleFormControlTextarea1"
                               rows="3"></textarea>
                 </div>
                 <div class="form-group">
@@ -103,11 +109,42 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                               rows="3"></textarea>
                 </div>
                 <div style="margin-top: 3em">
-                    <button type="submit" class="default-btn" style="width: 200px;padding: .3em 0">Send</button>
+                    <button onclick="getValues()" type="button" data-toggle="modal" data-target="#exampleModal"
+                            class="default-btn" style="width: 200px;padding: .3em 0" id="modalBtn">Send
+                    </button>
+                </div>
+                <!-- Button trigger modal -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Are you shure?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>First and last name: <b id="firstAndLastName"></b></h5>
+                                <h5>Email: <b id="email"></b></h5>
+                                <h5>Location opinion: <b id="locationOpinion"></b></h5>
+                                <h5>Website opinion: <b id="websiteOpinion"></b></h5>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="default-btn" onclick="sendData()">Send</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
 </div>
+<script src="../js/form.js">
+
+</script>
 </body>
 </html>
