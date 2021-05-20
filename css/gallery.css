@@ -4,6 +4,7 @@
 body {
     background-color: #121212;
 }
+
 h1 {
     color: #fff;
 }
@@ -19,4 +20,10 @@ h1 {
 
 .swiper-slide img {
     height: 500px
+}
+
+img {
+    -webkit-box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
 }
