@@ -14,10 +14,6 @@
     background-attachment: fixed;
 }
 
-nav a {
-    color: #fff !important;
-    font-weight: bold;
-}
 
 .header h1 {
 
@@ -40,6 +36,7 @@ img {
     -moz-box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
 }
+
 .footer {
     height: 50vh;
     background: linear-gradient(to right, #f80759, #bc4e9c);

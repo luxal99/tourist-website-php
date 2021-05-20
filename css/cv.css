@@ -1,9 +1,5 @@
 @import "global.css";
 
-nav a {
-    color: #fff !important;
-}
-
 body {
     background: #bc4e9c; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f80759, #bc4e9c); /* Chrome 10-25, Safari 5.1-6 */

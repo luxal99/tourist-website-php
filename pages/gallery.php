@@ -25,11 +25,97 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="icon" href="../assets/img/nis-grb-veliki1.png">
+    <link rel="stylesheet" href="../css/gallery.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="../index.php"><img class="img-fluid" src="../assets/img/nis-grb-veliki1.png"
+                                                     width="50px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="cv.php">About me</a>
+            <a class="nav-item nav-link" href="about-city.php">About city</a>
+            <a class="nav-item nav-link" href="pages/gallery.php">Gallery</a>
+            <a class="nav-item nav-link" href="form.php">Leave a message</a>
+            <a class="nav-item nav-link disabled" href="login.php">Login</a>
+        </div>
+    </div>
+</nav>
 
-<script>
-    var swiper = new Swiper(".mySwiper", {
+<div class="content">
+    <h1>Gallery</h1>
+    <div class="gradient-divider"></div>
+
+    <div class="swiper-container swiper text-center" style="margin-top: 5em">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../assets/img/kazandzijsko-sokace-tinkers-alley-1170x521.jpg"
+                     onclick="showBigPicture(event)">
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/img/park-svetog-Save-u-Nisu.jpg" onclick="showBigPicture(event)">
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/img/Saborna_crkva_u_Nisu3.jpg" onclick="showBigPicture(event)">
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/img/1280x0_MEDIJANA-MOZAIK-VANJA-KESER-JV14.jpg" onclick="showBigPicture(event)">
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/img/Delta-Planet-Niš2.jpg" onclick="showBigPicture(event)">
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/img/NisGradGmaps.jpg" onclick="showBigPicture(event)">
+            </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <h1 class="mt-4">Gallery</h1>
+    <div class="gradient-divider"></div>
+
+    <div class="swiper-container swiper text-center" style="margin-top: 5em">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../assets/img/second-gallery/1.jpg" id="first-picture"
+                     onclick="showBigPicture(event)">
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/img/second-gallery/2.jpg" id="first-picture"
+                     onclick="showBigPicture(event)">
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/img/second-gallery/3.jpg" id="first-picture"
+                     onclick="showBigPicture(event)">
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/img/second-gallery/4.jpg" id="first-picture"
+                     onclick="showBigPicture(event)">
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/img/second-gallery/5.jpg" id="first-picture"
+                     onclick="showBigPicture(event)">
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/img/second-gallery/6.jpg" id="first-picture"
+                     onclick="showBigPicture(event)">
+            </div>
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+<script type="module">
+    import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+
+    let swiper = new Swiper(".swiper", {
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -39,9 +125,10 @@
         loop: true
     });
 
+</script>
+<script>
     function showBigPicture($event) {
-        location.href = `pages/big-picture.php?q=${$event.target.src}`;
-
+        location.href = `./big-picture.php?q=${$event.target.src}`;
     }
 </script>
 </body>

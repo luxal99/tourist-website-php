@@ -77,7 +77,7 @@
     document.getElementById('big-image').src = new URLSearchParams(window.location.search).get('q')
 
     function getBack() {
-        location.href = '../index.php'
+        history.back();
     }
 </script>
 </html>

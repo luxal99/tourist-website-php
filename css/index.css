@@ -1,7 +1,7 @@
 /** @format */
 
 @import "./global.css";
-@import "./swipper.css";
+@import "./swiper.css";
 
 html {
     scroll-behavior: smooth;
@@ -25,10 +25,6 @@ html {
     color: white;
     font-size: 60px !important;
     padding-top: 5em;
-}
-
-nav a {
-    color: #fff !important;
 }
 
 .header p {
