@@ -37,6 +37,9 @@ img {
     box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
 }
 @media screen and (max-width: 960px) {
+    .header {
+        background-attachment: unset;
+    }
     .header h1 {
         padding-top: 2em;
     }

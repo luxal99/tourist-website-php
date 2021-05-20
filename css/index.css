@@ -115,6 +115,9 @@ input:invalid {
 }
 
 @media screen and (max-width: 960px) {
+    .header {
+        background-attachment: unset;
+    }
     .main-container {
         padding: 0;
     }
