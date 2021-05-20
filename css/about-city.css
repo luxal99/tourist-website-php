@@ -38,7 +38,7 @@ img {
 }
 @media screen and (max-width: 960px) {
     .header {
-        background-attachment: unset;
+        background-attachment: scroll;
     }
     .header h1 {
         padding-top: 2em;
