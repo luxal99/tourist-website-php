@@ -37,6 +37,7 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="pages/cv.php">About me</a>
                 <a class="nav-item nav-link" href="pages/about-city.php">About city</a>
+                <a class="nav-item nav-link" href="pages/gallery.php">Gallery</a>
                 <a class="nav-item nav-link" href="pages/form.php">Leave a message</a>
                 <a class="nav-item nav-link disabled" href="pages/login.php">Login</a>
             </div>
@@ -82,17 +83,22 @@
                 settlement durring
                 <b>period 5800—5500.bc</b>
             </li>
-            <li><b>The name of city</b>, most likely, it dates back to the time when they ruled it <b>Celtic</b>. According to the most common
+            <li><b>The name of city</b>, most likely, it dates back to the time when they ruled it <b>Celtic</b>.
+                According to the most common
                 stated thesis about
-                etymological origin of the name of the city, Nis was named by the Celts, Navisos with the meaning of the Fairy City.
+                etymological origin of the name of the city, Nis was named by the Celts, Navisos with the meaning of the
+                Fairy City.
             </li>
-            <li>According to the historian Edward Gibbon ("Decline and Fall of the Roman Empire" Vol. 2, XXV), in Mediana 364.
+            <li>According to the historian Edward Gibbon ("Decline and Fall of the Roman Empire" Vol. 2, XXV), in
+                Mediana 364.
                 Emperors Valentinian I and Valens divided the Roman Empire and then ruled as co-rulers
             </li>
-            <li> Nis was one of the seats of the Turkish military and civilian authorities, and for the longest time it was located in
+            <li> Nis was one of the seats of the Turkish military and civilian authorities, and for the longest time it
+                was located in
                 Smederevo pashaluq.
             </li>
-            <li><b>In the first half of the 18th century, Kazandžijsko sokače was created, today the only preserved part of the old Niš
+            <li><b>In the first half of the 18th century, Kazandžijsko sokače was created, today the only preserved part
+                    of the old Niš
                     bazaars.</b>
             </li>
         </ul>
