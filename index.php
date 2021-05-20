@@ -42,9 +42,9 @@
         </div>
     </nav>
     <div class="text-center">
-        <h1>Dobrodošli u Niš</h1>
-        <p>Nadamo se da ćemo ispuniti sva Vaša očekivanja</p>
-        <button onclick="location.href='#container'" class="default-btn">Više informacija</button>
+        <h1>Welcome to Niš</h1>
+        <p>We hope to meet all your expectations</p>
+        <button onclick="location.href='#container'" class="default-btn">More information</button>
     </div>
 </div>
 <div id="container" class="container main-container">
@@ -53,7 +53,7 @@
             <h1 style="padding-top: 2em">Niška tvrđava</h1>
             <p>Niška tvrđava je gradsko utvrđenje u centru Niša na desnoj obali Nišave, koje ima kontinuitet od oko dva
                 milenijuma konstantnog postojanja o čemu svedoče mnogobrojni arheološki nalazi.</p>
-            <button class="default-btn">Više o tvrđavi</button>
+            <button class="default-btn" onclick="location.href='pages/about-city.php'">Više o tvrđavi</button>
         </div>
         <div class="col-sm">
             <img src="assets/img/article-37.jpg" class="img-fluid ">
@@ -67,7 +67,7 @@
             <h1 style="padding-top: 2em">Ćele kula</h1>
             <p>Niška tvrđava je gradsko utvrđenje u centru Niša na desnoj obali Nišave, koje ima kontinuitet od oko dva
                 milenijuma konstantnog postojanja o čemu svedoče mnogobrojni arheološki nalazi.</p>
-            <button class="default-btn">Više o tvrđavi</button>
+            <button class="default-btn" onclick="location.href='pages/about-city.php'">Više o tvrđavi</button>
         </div>
     </div>
     <div class="facts">

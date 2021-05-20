@@ -20,8 +20,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="../css/about-city.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -30,6 +30,27 @@
     <title>About City</title>
 </head>
 <body>
-
+<div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="../index.php"><img class="img-fluid" src="../assets/img/nis-grb-veliki1.png"
+                                                         width="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../pages/cv.php">About me</a>
+                <a class="nav-item nav-link" href="../pages/form.php">Leave a message</a>
+                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+            </div>
+        </div>
+    </nav>
+    <div class="text-center">
+        <h1>History of Niš</h1>
+        <p>On this page you will get acquainted with the history of the city</p>
+        <button onclick="location.href='#container'" class="default-btn">More information</button>
+    </div>
+</div>
 </body>
 </html>

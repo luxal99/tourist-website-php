@@ -1,1 +1,32 @@
 @import "global.css";
+
+.header {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+            354deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.14049369747899154) 100%
+    ),
+    url("../assets/img/nis-serbia-e1517241131490.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav a {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.header h1 {
+
+    font-size: 60px !important;
+    padding-top: 4em;
+    color: #fff;
+}
+
+.header p {
+    color: #ff50e2;
+    font-size: 28px;
+}
