@@ -50,10 +50,11 @@
 <div id="container" class="container main-container">
     <div class="row">
         <div class="col-sm">
-            <h1 style="padding-top: 2em">Niška tvrđava</h1>
-            <p>Niška tvrđava je gradsko utvrđenje u centru Niša na desnoj obali Nišave, koje ima kontinuitet od oko dva
-                milenijuma konstantnog postojanja o čemu svedoče mnogobrojni arheološki nalazi.</p>
-            <button class="default-btn" onclick="location.href='pages/about-city.php'">Više o tvrđavi</button>
+            <h1 style="padding-top: 2em">Niš fortress</h1>
+            <p>Nis Fortress is a city fortification in the center of Nis on the right bank of the Nisava, which has a
+                continuity of about two
+                millennia of constant existence, as evidenced by numerous archaeological finds.</p>
+            <button class="default-btn" onclick="location.href='pages/about-city.php#fortress'">More</button>
         </div>
         <div class="col-sm">
             <img src="assets/img/article-37.jpg" class="img-fluid ">
@@ -64,10 +65,10 @@
             <img src="assets/img/119.jpg" class="img-fluid ">
         </div>
         <div class="col-sm text-right">
-            <h1 style="padding-top: 2em">Ćele kula</h1>
-            <p>Niška tvrđava je gradsko utvrđenje u centru Niša na desnoj obali Nišave, koje ima kontinuitet od oko dva
-                milenijuma konstantnog postojanja o čemu svedoče mnogobrojni arheološki nalazi.</p>
-            <button class="default-btn" onclick="location.href='pages/about-city.php'">Više o tvrđavi</button>
+            <h1 style="padding-top: 2em">Skull tower</h1>
+            <p>Skull tower is a monument from the First Serbian Uprising, which was built from skulls in revenge for the
+                then Turkish rule in Serbia.</p>
+            <button class="default-btn" onclick="location.href='pages/about-city.php#tower'">More</button>
         </div>
     </div>
     <div class="facts">
@@ -75,25 +76,23 @@
             Zanimljive činjenice
         </h1>
         <ul>
-            <li>Ime Niš potiče od Rimskog naziva <b>"Nais","Naissus"</b></li>
-            <li>Otkrića na praistorijskom lokalitetu<b> Bubanj i Velika humska čuka</b> govore da je tu postojala
-                naseobina u
-                <b>periodu 5800—5500. godine pre naše ere</b>. Najstariji sloj pripada neolitu ili starčevačkoj
-                kulturnoj
-                grupi.Ovi lokaliteti pripadaju Bubanj Salkuca Krivodol kompleksu.
+            <li>The name Nis comes from the Roman name "Nais", "Naissus"</b></li>
+            <li>Discoveries at a prehistoric site<b> Bubanj i Velika humska čuka</b> they say it existed there
+                settlement durring
+                <b>period 5800—5500.bc</b>
             </li>
-            <li><b>Naziv grada</b>, najverovatnije, potiče iz doba kada su njime vladali <b>Kelti</b>. Prema najčešće
-                navođenoj tezi o
-                etimološkom poreklu imena grada, Nišu su ime dali Kelti, Navisos sa značenjem Vilin grad.[4]
+            <li><b>The name of city</b>, most likely, it dates back to the time when they ruled it <b>Celtic</b>. According to the most common
+                stated thesis about
+                etymological origin of the name of the city, Nis was named by the Celts, Navisos with the meaning of the Fairy City.
             </li>
-            <li>Prema istoričaru Edvardu Gibonu ("Decline and Fall of the Roman Empire" Vol. 2, XXV), u Medijani 364.
-                godine carevi Valentinijan I i Valens podelili su Rimsko carstvo i potom vladali kao savladari
+            <li>According to the historian Edward Gibbon ("Decline and Fall of the Roman Empire" Vol. 2, XXV), in Mediana 364.
+                Emperors Valentinian I and Valens divided the Roman Empire and then ruled as co-rulers
             </li>
-            <li> Niš je bio jedno od sedišta turske vojne i civilne vlasti, a u najdužem periodu nalazio se u
-                Smederevskom pašaluku.
+            <li> Nis was one of the seats of the Turkish military and civilian authorities, and for the longest time it was located in
+                Smederevo pashaluq.
             </li>
-            <li><b>U prvoj polovini 18. veka je nastalo Kazandžijsko sokače, danas jedini očuvani deo stare niške
-                    čaršije.</b>
+            <li><b>In the first half of the 18th century, Kazandžijsko sokače was created, today the only preserved part of the old Niš
+                    bazaars.</b>
             </li>
         </ul>
     </div>

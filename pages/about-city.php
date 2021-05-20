@@ -116,7 +116,7 @@
         <img src="../assets/img/450px-Bali_begova_dzamija2.jpg" class="img-fluid">
         <p>Bali Beg's mosque</p>
     </div>
-    <h1>Skull tower</h1>
+    <h1 id="tower">Skull tower</h1>
     <div class="divider"></div>
     <p class="mt-2">"Ćele-kula" is a monument from the First Serbian Uprising, which was built by the then Turkish
         government in Serbia
