@@ -30,3 +30,25 @@ nav a {
     color: #ff50e2;
     font-size: 28px;
 }
+
+.container {
+    padding: 10em 0;
+}
+
+img {
+    -webkit-box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
+}
+.footer {
+    height: 50vh;
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+}
+
+.white {
+    color: #fff !important;
+}
+
+.footer .container h1 {
+    padding-top: 2em;
+}
