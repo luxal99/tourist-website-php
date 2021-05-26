@@ -32,21 +32,17 @@
         @import "../css/global.css";
 
         body {
-            background-color: #121212;
+            background-color: #fdf9f6;
         }
 
-        #big-image {
-            padding-top: 5em;
+        h1 {
+            font-size: 80px;
+            padding: 2em;
         }
-
         .default-btn {
             margin-top: 2em;
         }
 
-        nav a {
-            color: #fff !important;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
@@ -67,10 +63,17 @@
         </div>
     </div>
 </nav>
-<div class="text-center container">
-    <img id="big-image" class="img-fluid">
-    <div class="text-right">
-        <button class="default-btn" onclick="getBack()">Back</button>
+<div class="text-center custom-container">
+    <div class="row">
+        <div class="col-4">
+            <h1>Big image</h1>
+        </div>
+        <div class="col-8">
+            <img id="big-image" class="img-fluid">
+            <div class="text-right">
+                <button class="default-btn" onclick="getBack()">Back</button>
+            </div>
+        </div>
     </div>
 </div>
 </body>

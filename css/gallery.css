@@ -2,17 +2,9 @@
 @import "swiper.css";
 
 body {
-    background-color: #121212;
+    background-color: #fdf9f6;
 }
 
-h1 {
-    color: #fff;
-}
-
-.gradient-divider {
-    height: 2px;
-    background: linear-gradient(to right, #f80759, #bc4e9c);
-}
 
 .content {
     padding: 5em 2em;

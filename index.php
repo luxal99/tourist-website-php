@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="icon" href="assets/img/nis-grb-veliki1.png">
+    <link rel="stylesheet" href="css/global.css">
 </head>
 
 <body>
@@ -110,6 +111,33 @@
                 <img class="img-fluid" src="assets/img/18159172752_c86c813c16_b.jpg">
             </div>
         </div>
+        <div class="swiper-div">
+            <h1 class="text-right g-h1">Gallery</h1>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/Sarajevo-la-mia-citta.jpg" id="first-picture"
+                             onclick="showBigPicture(event)">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/18159172752_c86c813c16_b.jpg" onclick="showBigPicture(event)">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/sarajevo_bascarsija_radman_iric_1.jpg" onclick="showBigPicture(event)">
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h1>Contact us</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s</p>
+        <button class="default-btn">Go to form</button>
     </div>
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -119,7 +147,7 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 50,
         loop: true
     });

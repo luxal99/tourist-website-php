@@ -8,7 +8,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Gallery</title>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
@@ -40,36 +40,30 @@
             <a class="nav-item nav-link" href="cv.php">About me</a>
             <a class="nav-item nav-link" href="about-city.php">About city</a>
             <a class="nav-item nav-link" href="gallery.php">Gallery</a>
-            <a class="nav-item nav-link" href="form.php">Leave a message</a>
-            <a class="nav-item nav-link disabled" href="login.php">Login</a>
+            <a class="nav-item nav-link" href="form.php">Contact</a>
         </div>
     </div>
 </nav>
 
 <div class="content">
     <h1>Gallery</h1>
-    <div class="gradient-divider"></div>
-
     <div class="swiper-container swiper text-center" style="margin-top: 5em">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="../assets/img/kazandzijsko-sokace-tinkers-alley-1170x521.jpg"
+                <img src="../assets/img/18159172752_c86c813c16_b.jpg"
                      onclick="showBigPicture(event)">
             </div>
             <div class="swiper-slide">
-                <img src="../assets/img/park-svetog-Save-u-Nisu.jpg" onclick="showBigPicture(event)">
+                <img src="../assets/img/sarajevo_bascarsija_radman_iric_1.jpg" onclick="showBigPicture(event)">
             </div>
             <div class="swiper-slide">
-                <img src="../assets/img/Saborna_crkva_u_Nisu3.jpg" onclick="showBigPicture(event)">
+                <img src="../assets/img/sarajevo.jpg" onclick="showBigPicture(event)">
             </div>
             <div class="swiper-slide">
-                <img src="../assets/img/1280x0_MEDIJANA-MOZAIK-VANJA-KESER-JV14.jpg" onclick="showBigPicture(event)">
+                <img src="../assets/img/Sarajevo-la-mia-citta.jpg" onclick="showBigPicture(event)">
             </div>
             <div class="swiper-slide">
-                <img src="../assets/img/Delta-Planet-Niš2.jpg" onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/NisGradGmaps.jpg" onclick="showBigPicture(event)">
+                <img src="../assets/img/Sarajevo_Kaisermoschee.jpeg" onclick="showBigPicture(event)">
             </div>
 
         </div>
@@ -77,7 +71,6 @@
         <div class="swiper-button-prev"></div>
     </div>
     <h1 class="mt-4">Gallery</h1>
-    <div class="gradient-divider"></div>
 
     <div class="swiper-container swiper text-center" style="margin-top: 5em">
         <div class="swiper-wrapper">
