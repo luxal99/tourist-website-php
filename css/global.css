@@ -1,23 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Raleway:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=KoHo:wght@300;400;500&display=swap');
 
 h1 {
-    font-family: "Pattaya", sans-serif !important;
+    font-family: 'Fredoka One', cursive !important;
 }
 
 button {
-    font-family: "Raleway", sans-serif !important;
+    font-family: 'KoHo', sans-serif !important;
     box-shadow: 8px 14px 13px -17px rgb(0 0 0);
 }
 
 h4, h5, h6, p, li, a {
-    font-family: "Raleway", sans-serif !important;
+    font-family: 'KoHo', sans-serif !important;
 }
 
 .default-btn {
     border: 1px solid transparent;
-    border-radius: 5px;
-    background: linear-gradient(to right, #f80759, #bc4e9c);
+    background-color: #1b204e;
     color: #fff;
     padding: 0.5em 0;
     width: 300px;
@@ -67,13 +65,24 @@ h4, h5, h6, p, li, a {
 
 nav a {
     font-weight: bold;
-    color: #fff !important;
+    color: #121212 !important;
+}
+
+.custom-container {
+    padding: 5em 10em;
+}
+
+.silver {
+    color: #b3acac;
+}
+
+.inline {
+    display: inline-flex;
+    width: 100%;
 }
 
 @media screen and (max-width: 960px) {
-
     .col, .col-sm {
         margin-top: 2em;
     }
-
 }
