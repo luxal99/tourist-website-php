@@ -45,200 +45,194 @@
         </div>
     </div>
 </nav>
-<div class="container">
-    <table class="CV" cellpadding="4px" border="1px" align="center">
-        <tr>
-            <td><img src="../assets/img/logocv.png"></td>
-        </tr>
-        <tr>
-            <th>Europass Curriculum Vitae
-            </th>
-            <td colspan="5"><img src="../assets/img/Marija.jpeg" height="150px" width="120px">
-        </tr>
-        <tr>
-            <th>Personal information</th>
-        </tr>
-        <tr>
-            <td>First name/Surname</td>
-            <td colspan="5">Marija Đorđević</td>
-        </tr>
-        <tr>
-            <td>Address(es)</td>
-            <td colspan="5">Streliška pot 7.</td>
-        </tr>
-        <tr>
-            <td>Telephone(s)</td>
-            <td colspan="5">069969082</td>
-        </tr>
-        <tr>
-            <td>E-mail</td>
-            <td colspan="5">maca99.md@gmail.com</td>
-        </tr>
-        <tr>
-            <td>Nationality</td>
-            <td colspan="5">Serbian</td>
-        </tr>
-        <tr>
-            <td>Date and place of birth</td>
-            <td colspan="5">18.09.1999, Niš, Serbia</td>
-        </tr>
-        <tr>
-            <td>Gender</td>
-            <td colspan="5">Female</td>
-        </tr>
-        <tr>
-            <th>Work experience</th>
-        </tr>
-        <tr>
-            <td>Dates</td>
-            <td colspan="5">15.02.2021-</td>
-        </tr>
-        <tr>
-            <td>Occupation or position held</td>
-            <td colspan="5">Student on internship</td>
-        </tr>
-        <tr>
-            <td>Main activities and responsibilities</td>
-            <td colspan="5">Promotion of current activities</td>
-        </tr>
-        <tr>
-            <td>Name and address of employer</td>
-            <td colspan="5">Primorski Tehnološki Park d.o.o, Mednarodni prehod 6, Vrtojba, 5290 Šempeter pri Gorici</td>
-        </tr>
-        <tr>
-            <td>Type of business or sector</td>
-            <td colspan="5">Support to young enterprises</td>
-        </tr>
-        <tr>
-            <th>Education and training</th>
-        </tr>
-        <tr>
-            <td>Dates</td>
-            <td colspan="5">01.09.2014-13.05.2018.</td>
-        </tr>
-        <tr>
-            <td>Title of qualification awarded</td>
-            <td colspan="5">Philologist</td>
-        </tr>
-        <tr>
-            <td>Principal subjects/occupational<br> skills covered</td>
-            <td colspan="5">English language, Italian, Latin, Spanish, Basics of translation, Rhetoric…</td>
-        </tr>
-        <tr>
-            <td>Name and type of organisation <br>providing education and training</td>
-            <td colspan="5">Prva niška gimnazija Stevan Sremac</td>
-        </tr>
-        <tr>
-            <th>Personal skills and <br>competences</th>
-        </tr>
-        <tr>
-            <td>Mother tongue</td>
-            <td colspan="5">Serbian</td>
-        </tr>
-        <tr>
-            <td>Other language(s)</td>
-            <td colspan="5"></td>
-        </tr>
-        <tr>
-            <td>Self-assessment</td>
-            <th colspan="2">Understanding</th>
-            <th colspan="2">Speaking</th>
-            <th>Writing</th>
-        </tr>
-        <tr>
-            <td>European level (*)</td>
-            <td>
-                <center>Listening</center>
-            </td>
-            <td>
-                <center>Reading</center>
-            </td>
-            <td>
-                <center>Spoken interaction</center>
-            </td>
-            <td>
-                <center>Spoken production</center>
-            </td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>English</th>
-            <td>
-                <center>C2</center>
-            </td>
-            <td>
-                <center>C1</center>
-            </td>
-            <td>
-                <center>C1</center>
-            </td>
-            <td>
-                <center>C1</center>
-            </td>
-            <td>
-                <center>C1</center>
-            </td>
-        </tr>
-        <tr>
-            <th>Slovenian</th>
-            <td>
-                <center>C1</center>
-            </td>
-            <td>
-                <center>C1</center>
-            </td>
-            <td>
-                <center>B2</center>
-            </td>
-            <td>
-                <center>B2</center>
-            </td>
-            <td>
-                <center>B2</center>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td colspan="5">(*) <A HREF="http://europass.cedefop.europa.eu/LanguageSelfAssessmentGrid/en">Common
-                    European Framework of Reference for Languages</A></td>
-        </tr
-        <tr>
-            <td>Social skills and competences</td>
-            <td colspan="5">Good</td>
-        </tr>
-        <tr>
-            <td>Organisational skills and competences</td>
-            <td colspan="5">Very good</td>
-        </tr>
-        <tr>
-            <td>Technical skills and competences</td>
-            <td colspan="5">Good</td>
-        </tr>
-        <tr>
-            <td>Computer skills and competences</td>
-            <td colspan="5">Excellent</td>
-        </tr>
-        <tr>
-            <td>Artistic skills and competences</td>
-            <td colspan="5">Very good</td>
-        </tr>
-        <tr>
-            <td>Other skills and competences</td>
-            <td colspan="5">//////////</td>
-        </tr>
-        <tr>
-            <td>Driving licence</td>
-            <td colspan="5">//////////</td>
-        </tr>
-        <tr>
-            <td>Additional information</td>
-            <td colspan="5">//////////</td>
-        </tr>
-        <tr>
-            <td>Annexes</td>
-            <td colspan="5">//////////</td>
-        </tr>
-    </table>
+<div class="custom-container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h1>My personal information</h1>
+        </div>
+        <div class="col-sm cv">
+            <div id="Vt">
+                <table class="CV" cellpadding="10px" border="5px" align="center">
+                    <tr>
+                        <td class="luc"><img src="../assets/img/europass.png"></td>
+                    </tr>
+                    <tr>
+                        <th class="luc">Europass <br> Curriculum Vitae</th>
+                        <td colspan="5"><img src="../assets/img/myimage.jpg" height="100px" width="100px"></td>
+                    </tr>
+
+                    <tr>
+                        <th class="luc">Personal information</th>
+                    </tr>
+                    <tr>
+                        <td class="luc">First name/Surname</td>
+                        <td colspan="5">Nejra Ajanovic</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Address(es)</td>
+                        <td colspan="5">Glavni trg 8, Vipava 5271, Republika Slovenija</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Telephone</td>
+                        <td colspan="5"> (+386) 69 919 523</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">E-mail</td>
+                        <td colspan="5">ajanovicnejra001@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Nationality</td>
+                        <td colspan="5">Bosnian</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Date and place of birth</td>
+                        <td colspan="5">21.03.1999, Sarajevo</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Gender</td>
+                        <td colspan="5">Female</td>
+                    </tr>
+                    <tr>
+                        <th class="luc">Work experience</th>
+                    </tr>
+                    <tr>
+                        <td class="luc">Dates</td>
+                        <td colspan="5">04.01.2021.-</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Occupation or position held</td>
+                        <td colspan="5">Quality technologyst</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Main activities and responsibilities</td>
+                        <td colspan="5">Qdas stat and process audits</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Name and address of employer</td>
+                        <td colspan="5">MAHLE Electric Drives Slovenia, Polja 15, Sempeter pri Gorici</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Type of business or sector</td>
+                        <td colspan="5">Quality systems</td>
+                    </tr>
+                    <tr>
+                        <th class="luc">Education and training</th>
+
+                    </tr>
+                    <tr>
+                        <td class="luc">Dates</td>
+                        <td colspan="5">2014.-2018.</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Title of qualification awarded</td>
+                        <td colspan="5">-----------------</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Principal subjects/occupational<br> skills covered</td>
+                        <td colspan="5">Mathematics, physics, chemistry ...</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Name and type of organisation <br>providing education and training</td>
+                        <td colspan="5">Prva bošnjačka gimnazija Sarajevo, Bosna i Hercegovina</td>
+                    </tr>
+                    <tr>
+                        <th class="luc">Personal skills and <br>competences</th>
+                    </tr>
+                    <tr>
+                        <td class="luc">Mother tongue</td>
+                        <td colspan="5">Bosnian</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Other language(s)</td>
+
+                    </tr>
+                    <tr>
+                        <td class="luc">Self-assessment</td>
+                        <th colspan="2">Understanding</th>
+                        <th colspan="2">Speaking</th>
+                        <th>Writing</th>
+
+                    </tr>
+                    <tr>
+                        <td class="luc">European level (*)</td>
+                        <td>Listening</td>
+                        <td>Reading</td>
+                        <td>Spoken interaction</td>
+                        <td>Spoken production</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="luc">English</th>
+                        <td>C1</td>
+                        <td>C1</td>
+                        <td>C1</td>
+                        <td>C1</td>
+                        <td>C1</td>
+                    </tr>
+                    <tr>
+                        <th class="luc">Slovenian</th>
+                        <td>C1</td>
+                        <td>C1</td>
+                        <td>B2</td>
+                        <td>B2</td>
+                        <td>B2</td>
+                    </tr>
+                    <tr>
+                        <th class="luc">German</th>
+                        <td>B1</td>
+                        <td>B1</td>
+                        <td>A2</td>
+                        <td>A2</td>
+                        <td>A2</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td colspan="5">(*)<A HREF="http://europass.cedefop.europa.eu/LanguageSelfAssessmentGrid/en">Common
+                                European Framework of Reference for Languages</A></td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Social skills and competences</td>
+                        <td colspan="5">Very good</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Organisational skills and competences</td>
+                        <td colspan="5">Good</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Technical skills and competences</td>
+                        <td colspan="5">Very good</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Computer skills and competences</td>
+                        <td colspan="5">Good</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Artistic skills and competences</td>
+                        <td colspan="5">Good</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Other skills and competences</td>
+                        <td colspan="5">No</td>
+                    </tr>
+                    <tr>
+                        <td class="luc">Driving licence</td>
+                        <td colspan="5">B</td>
+                    </tr>
+                    <tr>
+                        <td class="luc"><b>Additional information</b></td>
+                        <td colspan="5">Above all a very honest and diligent person. I am very responsible,persistent,
+                            productive and motivated
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="luc"><b>Annexes</b></td>
+                        <td colspan="5">No</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
