@@ -37,9 +37,9 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="pages/cv.php">About me</a>
-                <a class="nav-item nav-link" href="pages/about-city.php">About city</a>
+                <a class="nav-item nav-link" href="pages/history.php">About city</a>
                 <a class="nav-item nav-link" href="pages/gallery.php">Gallery</a>
-                <a class="nav-item nav-link" href="pages/form.php">Leave a message</a>
+                <a class="nav-item nav-link" href="pages/contact.php">Leave a message</a>
             </div>
         </div>
     </nav>
@@ -152,7 +152,7 @@
     });
 
     function showBigPicture($event) {
-        location.href = `pages/big-picture.php?q=${$event.target.src}`;
+        location.href = `pages/picture.php`;
 
     }
 </script>

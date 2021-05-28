@@ -23,7 +23,7 @@
             rel="stylesheet"
             href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="../css/about-city.css">
+    <link rel="stylesheet" href="../css/history.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="icon" href="../assets/img/nis-grb-veliki1.png">
@@ -41,9 +41,9 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="./cv.php">About me</a>
-                <a class="nav-item nav-link" href="./about-city.php">About city</a>
+                <a class="nav-item nav-link" href="./history.php">About city</a>
                 <a class="nav-item nav-link" href="gallery.php">Gallery</a>
-                <a class="nav-item nav-link" href="./form.php">Leave a message</a>
+                <a class="nav-item nav-link" href="contact.php">Leave a message</a>
             </div>
         </div>
     </nav>

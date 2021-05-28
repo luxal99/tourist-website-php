@@ -38,9 +38,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-item nav-link" href="cv.php">About me</a>
-            <a class="nav-item nav-link" href="about-city.php">About city</a>
+            <a class="nav-item nav-link" href="history.php">About city</a>
             <a class="nav-item nav-link" href="gallery.php">Gallery</a>
-            <a class="nav-item nav-link" href="form.php">Leave a message</a>
+            <a class="nav-item nav-link" href="contact.php">Leave a message</a>
             <a class="nav-item nav-link disabled" href="login.php">Login</a>
         </div>
     </div>
