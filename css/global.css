@@ -15,8 +15,7 @@ h4, h5, h6, p, li, a {
 
 .default-btn {
     border: 1px solid transparent;
-    background-color: #
-    background-color: #1b204e;;
+    background-color: #1b204e;
     color: #fff;
     padding: 0.5em 0;
     width: 300px;
@@ -35,6 +34,7 @@ h4, h5, h6, p, li, a {
     cursor: pointer;
     font-weight: bold;
 }
+
 .default-btn:hover {
     background-color: #242b68;
     transition: 0.5s linear;
@@ -46,7 +46,7 @@ h4, h5, h6, p, li, a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right, #f80759, #bc4e9c);
+    background-color: #282828;
     border-radius: 10px;
 }
 
