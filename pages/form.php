@@ -49,56 +49,43 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 <a class="nav-item nav-link" href="about-city.php">About city</a>
                 <a class="nav-item nav-link" href="gallery.php">Gallery</a>
                 <a class="nav-item nav-link" href="form.php">Leave a message</a>
-                <a class="nav-item nav-link disabled" href="login.php">Login</a>
             </div>
         </div>
     </nav>
     <div class="container">
-        <h1 class="white">We would love to hear your opinion</h1>
-        <p class="white">If you have visited our city, leave a comment whether it is positive or bad. You can also rate
+        <h1>We would love to hear your opinion</h1>
+        <p>If you have visited our city, leave a comment whether it is positive or bad. You can also rate
             our site how
             they would know if we presented the city of Nis in the right way</p>
         <div class="form">
             <form method="post" id="opinionForm">
-                <h3>Contact form</h3>
+                <h1>Contact us</h1>
                 <div class="row">
-                    <div class="col-sm">
+                    <div class="col-6">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="">First name</span>
                             </div>
-                            <input pattern="[A-Za-z]{3,}" name="firstName" type="text" placeholder="Marko"
+                            <input pattern="[A-Za-z]{3,}" name="fullName" type="text" placeholder="Marko"
                                    class="form-control"/>
                         </div>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-6">
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="">Last name</span>
+                                <span class="input-group-text" id="basic-addon1">@</span>
                             </div>
-                            <input name="lastName" pattern="[A-Za-z]{3,}" type="text" placeholder="Jankovic"
-                                   class="form-control">
+                            <input name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="text"
+                                   class="form-control" placeholder="mail@example.com"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1">
                         </div>
                     </div>
                 </div>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                    </div>
-                    <input name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="text"
-                           class="form-control" placeholder="mail@example.com"
-                           aria-label="Username"
-                           aria-describedby="basic-addon1">
-                </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Location opinion</label>
-                    <textarea name="locationOpinion" class="form-control"
+                    <textarea name="message" class="form-control"
                               id="exampleFormControlTextarea1"
-                              rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea2">Website opinion</label>
-                    <textarea class="form-control" name="websiteOpinion" id="exampleFormControlTextarea2"
                               rows="3"></textarea>
                 </div>
                 <div style="margin-top: 3em">

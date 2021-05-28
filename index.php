@@ -40,7 +40,6 @@
                 <a class="nav-item nav-link" href="pages/about-city.php">About city</a>
                 <a class="nav-item nav-link" href="pages/gallery.php">Gallery</a>
                 <a class="nav-item nav-link" href="pages/form.php">Leave a message</a>
-                <a class="nav-item nav-link disabled" href="pages/login.php">Login</a>
             </div>
         </div>
     </nav>

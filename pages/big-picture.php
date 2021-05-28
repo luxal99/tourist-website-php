@@ -59,7 +59,6 @@
             <a class="nav-item nav-link" href="about-city.php">About city</a>
             <a class="nav-item nav-link" href="gallery.php">Gallery</a>
             <a class="nav-item nav-link" href="form.php">Leave a message</a>
-            <a class="nav-item nav-link disabled" href="login.php">Login</a>
         </div>
     </div>
 </nav>

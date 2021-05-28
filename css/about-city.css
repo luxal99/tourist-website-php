@@ -7,7 +7,7 @@
             rgba(0, 0, 0, 1) 0%,
             rgba(0, 0, 0, 0.14049369747899154) 100%
     ),
-    url("../assets/img/nis-serbia-e1517241131490.jpg");
+    url("../assets/img/Sarajevo_Kaisermoschee.jpeg");
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -16,14 +16,13 @@
 
 
 .header h1 {
-
     font-size: 60px !important;
-    padding-top: 4em;
+    padding-top: 5em;
     color: #fff;
 }
 
 .header p {
-    color: #ff50e2;
+    color: #FFEFBA;
     font-size: 28px;
 }
 
