@@ -35,7 +35,7 @@
             background-color: #fdf9f6;
         }
 
-        h1 {
+        .huge-h1 {
             font-size: 80px;
             padding: 2em;
         }
@@ -52,7 +52,7 @@ include "./navbar.php"
 <div class="text-center custom-container">
     <div class="row">
         <div class="col-4">
-            <h1>Big image</h1>
+            <h1 class="huge-h1">Big image</h1>
         </div>
         <div class="col-8">
             <img id="big-image" class="img-fluid">

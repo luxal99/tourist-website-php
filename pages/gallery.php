@@ -33,82 +33,64 @@ include "./navbar.php"
 ?>
 
 <div class="content">
-    <h1>Gallery</h1>
-    <div class="swiper-container swiper text-center" style="margin-top: 5em">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="../assets/img/18159172752_c86c813c16_b.jpg"
-                     onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/sarajevo_bascarsija_radman_iric_1.jpg" onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/sarajevo.jpg" onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/Sarajevo-la-mia-citta.jpg" onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/Sarajevo_Kaisermoschee.jpeg" onclick="showBigPicture(event)">
-            </div>
-
+    <h1 class="huge-h1 text-center">Gallery</h1>
+    <div class="row">
+        <div class="col-sm-4">
+            <img class="gallery-img" src="../assets/img/18159172752_c86c813c16_b.jpg"
+                 onclick="showBigPicture(event)">
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="col-sm-4"><img class="gallery-img" src="../assets/img/sarajevo_bascarsija_radman_iric_1.jpg"
+                                   onclick="showBigPicture(event)">
+        </div>
+        <div class="col-sm-4">
+            <img class="gallery-img" src="../assets/img/sarajevo.jpg" onclick="showBigPicture(event)">
+        </div>
     </div>
-    <h1 class="mt-4">Gallery</h1>
-
-    <div class="swiper-container swiper text-center" style="margin-top: 5em">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="../assets/img/second-gallery/1.jpg" id="first-picture"
-                     onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/second-gallery/2.jpg" id="first-picture"
-                     onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/second-gallery/3.jpg" id="first-picture"
-                     onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/second-gallery/4.jpg" id="first-picture"
-                     onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/second-gallery/5.jpg" id="first-picture"
-                     onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/second-gallery/6.jpg" id="first-picture"
-                     onclick="showBigPicture(event)">
-            </div>
-
-
+    <div class="row">
+        <div class="col-sm-4">
+            <img class="gallery-img" src="../assets/img/Sarajevo-la-mia-citta.jpg"
+                 onclick="showBigPicture(event)">
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="col-sm-4"><img class="gallery-img" src="../assets/img/Sarajevo_Kaisermoschee.jpeg"
+                                   onclick="showBigPicture(event)">
+        </div>
+        <div class="col-sm-4">
+            <img class="gallery-img" src="../assets/img/7.jpg" onclick=" showBigPicture(event)">
+        </div>
+    </div>
+    <h1 class="mt-4 huge-h1 text-center">Gallery</h1>
+    <div class="row">
+        <div class="col-sm-4">
+            <img class="gallery-img" src="../assets/img/gallery2/1.jpg"
+                 onclick="showBigPicture(event)">
+        </div>
+        <div class="col-sm-4">
+            <img class="gallery-img" src="../assets/img/gallery2/2.jpg"
+                 onclick="showBigPicture(event)">
+        </div>
+        <div class="col-sm-4">
+            <img class="gallery-img" src="../assets/img/gallery2/3.jpg"
+                 onclick="showBigPicture(event)">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <img class="gallery-img" src="../assets/img/gallery2/4.jpg"
+                 onclick="showBigPicture(event)">
+        </div>
+        <div class="col-sm-4">
+            <img class="gallery-img" src="../assets/img/gallery2/5.png"
+                 onclick="showBigPicture(event)">
+        </div>
+        <div class="col-sm-4">
+            <img class="gallery-img" src="../assets/img/gallery2/6.jpg"
+                 onclick="showBigPicture(event)">
+        </div>
     </div>
 </div>
-<script type="module">
-    import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
-
-    let swiper = new Swiper(".swiper", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        slidesPerView: 2,
-        spaceBetween: 50,
-        loop: true
-    });
-
-</script>
 <script>
     function showBigPicture($event) {
-        location.href = `picture.php`;
+        location.href = `picture.php?q=${$event.target.src}`;
     }
 </script>
 </body>
