@@ -1,10 +1,10 @@
-const opinionForm = document.getElementById('opinionForm');
+const contactForm = document.getElementById('contact');
 
 disableModalBtn()
-opinionForm.addEventListener('input', () => {
-    const formData = new FormData(document.forms.namedItem('opinionForm'));
-    if (formData.get('firstName').match("[A-Za-z]{3,}") && formData.get('lastName').match("[A-Za-z]{3,}")
-        && formData.get('email').match("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$") && formData.get('locationOpinion').length > 10 && formData.get('websiteOpinion').length > 10) {
+contactForm.addEventListener('input', () => {
+    const formData = new FormData(document.forms.namedItem('contact'));
+    if (formData.get('fullName').match("[A-Za-z]{3,}") && formData.get('email').match("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$") &&
+        formData.get('message').length > 10) {
         enableModalBtn();
     } else {
         disableModalBtn()
@@ -12,27 +12,24 @@ opinionForm.addEventListener('input', () => {
 })
 
 function getValues() {
-    const formData = new FormData(document.forms.namedItem('opinionForm'));
-    document.getElementById('firstAndLastName').innerText = formData.get('firstName') + formData.get('lastName');
-    document.getElementById('email').innerText = formData.get('email');
-    document.getElementById('locationOpinion').innerText = formData.get('locationOpinion');
-    document.getElementById('websiteOpinion').innerText = formData.get('websiteOpinion');
+    const formData = new FormData(document.forms.namedItem('contact'));
+    alert(`Full name: ${formData.get('fullName')}, \nEmail:${formData.get('email')} \n Message:${formData.get('message')}`)
+    if (confirm('Send data')) {
+        sendData()
+    }
 }
 
 function sendData() {
-    const formData = new FormData(document.forms.namedItem('opinionForm'));
-    console.log(formData)
-    fetch('http://localhost:3000/pages/form.php', {
+    const formData = new FormData(document.forms.namedItem('contact'));
+    fetch('http://localhost:3000/pages/contact.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
         },
         body: new URLSearchParams({
-            'firstName': formData.get('firstName'),
-            'lastName': formData.get('lastName'),
+            'fullName': formData.get('fullName'),
             'email': formData.get('email'),
-            'locationOpinion': formData.get('locationOpinion'),
-            'websiteOpinion': formData.get('websiteOpinion'),
+            'message': formData.get('message'),
         })
     }).then(res => {
         if (res.status === 200) {
@@ -44,11 +41,11 @@ function sendData() {
 }
 
 function disableModalBtn() {
-    document.getElementById('modalBtn').style.pointerEvents = 'none'
-    document.getElementById('modalBtn').style.color = '#eee'
+    document.getElementById('submitBtn').style.pointerEvents = 'none'
+    document.getElementById('submitBtn').style.color = '#eee'
 }
 
 function enableModalBtn() {
-    document.getElementById('modalBtn').style.pointerEvents = 'all'
-    document.getElementById('modalBtn').style.color = '#fff'
+    document.getElementById('submitBtn').style.pointerEvents = 'all'
+    document.getElementById('submitBtn').style.color = '#fff'
 }

@@ -1,7 +1,9 @@
 <?php
 include "../config/config.php";
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-
+    $sql = "INSERT INTO contact(full_name,email,message) values ('" . $_POST['fullName'] . "','" . $_POST['email'] . "','" . $_POST['message'] . "')";
+    /** @var TYPE_NAME $conn */
+    $conn->query($sql);
 }
 
 ?>
@@ -25,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <div class="form">
         <div class="row">
             <div class="col-sm-7">
-                <form method="post" id="opinionForm">
+                <form method="post" id="contact">
                     <h1>Contact us</h1>
                     <div class="row">
                         <div style="padding-left: 0" class="col-6">
@@ -47,36 +49,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                   rows="3"></textarea>
                     </div>
                     <div style="margin-top: 3em">
-                        <button onclick="getValues()" type="button" data-toggle="modal" data-target="#exampleModal"
-                                class="default-btn" style="width: 200px;padding: .3em 0" id="modalBtn">Send
+                        <button onclick="getValues()" type="button" class="default-btn"
+                                style="width: 200px;padding: .3em 0" id="submitBtn">Send
                         </button>
                     </div>
                     <!-- Button trigger modal -->
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                         aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Valid data ?</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <h5>Full name : <b id="firstAndLastName"></b></h5>
-                                    <h5>Email: <b id="email"></b></h5>
-                                    <h5>Message: <b id="locationOpinion"></b></h5>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
-                                    </button>
-                                    <button type="button" class="default-btn" onclick="sendData()">Send</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </form>
             </div>
             <div class="col-sm-5">
