@@ -46,29 +46,29 @@
         <div class="row">
             <div class="col-6 txt-col">
                 <h1>Sarajevo</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived </p>
-                <button class="default-btn">More</button>
+                <h5>Through this presentation you will get to know the city Sarajevo </h5>
+                <a href="#container">
+                    <button class="default-btn">More</button>
+                </a>
             </div>
             <div class="col-6 background-column"></div>
         </div>
     </div>
 </div>
 <div class="content">
-    <div class="custom-container">
+    <div class="custom-container" id="container">
         <div class="row text-center">
             <div class="col-3">
-                <h4 class="silver">Lorem ipsum</h4>
+                <h4 class="silver">Welcome to</h4>
             </div>
             <div class="col-3">
-                <h4 class="silver">Lorem ipsum</h4>
+                <h4 class="silver">Capital city</h4>
             </div>
             <div class="col-3">
-                <h4 class="silver">Lorem ipsum</h4>
+                <h4 class="silver">of</h4>
             </div>
             <div class="col-3">
-                <h4 class="silver">Lorem ipsum</h4>
+                <h4 class="silver">Bosnia and Hercegovina</h4>
             </div>
 
         </div>
@@ -78,26 +78,27 @@
             </div>
             <div class="col-sm right-col">
                 <h1>Sarajevo</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived </p>
-                <button class="default-btn">More</button>
+                <p>Sarajevo is the capital city and largest city of Bosnia and Hercegovina.Sarajevo is the political, financial,
+                    social and cultural center of Bosnia and Herzegovina...</p>
+                <a href="pages/history.php"><button class="default-btn">More</button></a>
             </div>
         </div>
-        <div class="row miljacka-row">
+        <div class="row miljacka-row" id="container">
             <div class="col-sm small-card-col ">
                 <h1>Sarajevo</h1>
                 <div class="small-card">
-                    <h4>Lorem ipsum</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h4>1914</h4>
+                    <p>Assassination of Austro-Hungarian Empire’s Archduke Franz Ferdinand sparks World War I.</p>
                 </div>
                 <div class="small-card">
-                    <h4>Lorem ipsum</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h4>1945</h4>
+                    <p>Liberated by partisans led by Marshal Josip Broz Tito, Sarajevo and Bosnia-Herzegovina become
+                        part of
+                        the Socialist Federal Republic of Yugoslavia.</p>
                 </div>
                 <div class="small-card">
-                    <h4>Lorem ipsum</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h4>1984</h4>
+                    <p>Sarajevo hosts Winter Olympics.</p>
                 </div>
             </div>
             <div class="col-sm">
