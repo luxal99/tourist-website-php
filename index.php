@@ -39,7 +39,6 @@
                 <a class="nav-item nav-link" href="pages/cv.php">About me</a>
                 <a class="nav-item nav-link" href="pages/history.php">About city</a>
                 <a class="nav-item nav-link" href="pages/gallery.php">Gallery</a>
-                <a class="nav-item nav-link" href="pages/contact.php">Leave a message</a>
             </div>
         </div>
     </nav>
@@ -59,24 +58,19 @@
 <div class="content">
     <div class="custom-container">
         <div class="row text-center">
-            <div class="col-2">
-                <h5 class="silver">Lorem ipsum</h5>
+            <div class="col-3">
+                <h4 class="silver">Lorem ipsum</h4>
             </div>
-            <div class="col-2">
-                <h5 class="silver">Lorem ipsum</h5>
+            <div class="col-3">
+                <h4 class="silver">Lorem ipsum</h4>
             </div>
-            <div class="col-2">
-                <h5 class="silver">Lorem ipsum</h5>
+            <div class="col-3">
+                <h4 class="silver">Lorem ipsum</h4>
             </div>
-            <div class="col-2">
-                <h5 class="silver">Lorem ipsum</h5>
+            <div class="col-3">
+                <h4 class="silver">Lorem ipsum</h4>
             </div>
-            <div class="col-2">
-                <h5 class="silver">Lorem ipsum</h5>
-            </div>
-            <div class="col-2">
-                <h5 class="silver">Lorem ipsum</h5>
-            </div>
+
         </div>
         <div class="row miljacka-row">
             <div class="col-sm">
@@ -131,12 +125,11 @@
             </div>
         </div>
     </div>
-
-    <div class="footer">
-        <?php
-        include "pages/contact.php"
-        ?>
-    </div>
+</div>
+<div class="footer">
+    <?php
+    include "pages/contact.php"
+    ?>
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>

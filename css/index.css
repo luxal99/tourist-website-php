@@ -29,6 +29,7 @@ html {
 
 .content {
     background-color: #fdf9f6;
+    margin: 2em 8em;
 }
 
 .rounded-img {
@@ -104,9 +105,11 @@ li {
     color: #fff;
     font-weight: bold;
 }
+
 .white {
     color: #fff !important;
 }
+
 .form {
     -webkit-box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 39px -23px rgba(0, 0, 0, 0.75);
@@ -116,12 +119,17 @@ li {
     padding: 4em 3em;
     margin-top: 2em;
 }
+
 .input-group {
     margin: 2em 0;
 }
 
 input:invalid {
     border: 1px solid red;
+}
+
+.footer {
+    margin: 5em 8em;
 }
 
 @media screen and (max-width: 960px) {
