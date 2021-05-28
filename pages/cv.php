@@ -28,27 +28,13 @@
     <title>About me</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light ">
-    <a class="navbar-brand" href="../index.php"><img class="img-fluid" src="../assets/img/nis-grb-veliki1.png"
-                                                     width="50px"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link" href="cv.php">About me</a>
-            <a class="nav-item nav-link" href="history.php">About city</a>
-            <a class="nav-item nav-link" href="gallery.php">Gallery</a>
-            <a class="nav-item nav-link" href="contact.php">Leave a message</a>
-            <a class="nav-item nav-link disabled" href="login.php">Login</a>
-        </div>
-    </div>
-</nav>
+<?php
+include "./navbar.php"
+?>
 <div class="custom-container">
     <div class="row">
         <div class="col-sm-4">
-            <h1>My personal information</h1>
+            <h1 class="huge-h1">My personal information</h1>
         </div>
         <div class="col-sm cv">
             <div id="Vt">

@@ -32,8 +32,7 @@
 <body>
 <div class="header">
     <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="../index.php"><img class="img-fluid" src="../assets/img/nis-grb-veliki1.png"
-                                                         width="50px"></a>
+        <a class="navbar-brand" href="../index.php"><h1>S</h1></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,7 +47,7 @@
         </div>
     </nav>
     <div class="text-center">
-        <h1>History of Sarajevo</h1>
+        <h1 class="header-h1">History of Sarajevo</h1>
         <p>Get information about history of Sarajevo</p>
         <button onclick="location.href='#container'" class="secondary-btn">More information</button>
     </div>

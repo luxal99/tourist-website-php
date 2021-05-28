@@ -133,10 +133,9 @@
     </div>
 
     <div class="footer">
-        <h1>Contact us</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s</p>
-        <button class="default-btn">Go to form</button>
+        <?php
+        include "pages/contact.php"
+        ?>
     </div>
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

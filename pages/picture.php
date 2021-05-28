@@ -46,22 +46,9 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light ">
-    <a class="navbar-brand" href="../index.php"><img class="img-fluid" src="../assets/img/nis-grb-veliki1.png"
-                                                     width="50px"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link" href="cv.php">About me</a>
-            <a class="nav-item nav-link" href="history.php">About city</a>
-            <a class="nav-item nav-link" href="gallery.php">Gallery</a>
-            <a class="nav-item nav-link" href="contact.php">Leave a message</a>
-        </div>
-    </div>
-</nav>
+<?php
+include "./navbar.php"
+?>
 <div class="text-center custom-container">
     <div class="row">
         <div class="col-4">
