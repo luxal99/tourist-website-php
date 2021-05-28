@@ -147,6 +147,13 @@
         <br><br>
         In 2014, the American magazine "Mental Floss" listed the Cele Tower as the largest building made of human bones.
     </p>
+
+    <h1>References</h1>
+    <div class="divider"></div>
+    <li><a href="https://sr.wikipedia.org/sr-ec/%D0%9D%D0%B8%D1%88">About city</a></li>
+    <li>https://sr.wikipedia.org/sr-ec/%D0%9D%D0%B8%D1%88</li>
+    <li>https://sr.wikipedia.org/sr-ec/%D0%9D%D0%B8%D1%88</li>
+
 </div>
 
 </body>

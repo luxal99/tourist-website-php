@@ -1,18 +1,9 @@
 <?php
 include "../config/config.php";
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    $sql = "insert into tourist_info(first_name, last_name, email) values ('" . $_POST['firstName'] . "','" . $_POST['lastName'] . "','" . $_POST['email'] . "')";
-    /** @var TYPE_NAME $conn */
-    if ($conn->query($sql) === TRUE) {
 
-        $select_last = "select MAX(id) as 'id' from tourist_info;";
-        $result = $conn->query($select_last);
-        $row = $result->fetch_assoc();
-        $opinion_sql = "insert into opinions(id_tourist,website_opinion,location_opinion) VALUES ('" . $row["id"] . "','" . $_POST["websiteOpinion"] . "','" . $_POST["locationOpinion"] . "')";
-
-        $conn->query($opinion_sql);
-    }
 }
+
 ?>
 
 <!doctype html>
