@@ -26,6 +26,8 @@ create table contact
 	message longtext null
 );
 
+```
+
 6. After that copy project files in directory C://xampp/htdocs
 7. After that open you browser and go to localhost/{{project-folder-name}}
 
