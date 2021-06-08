@@ -38,7 +38,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <title>Form</title>
 </head>
 <body>
-<div class="footer">
+<?php
+include "./navbar.php"
+?>
+<div class="footer container">
     <div class="form">
         <div class="row">
             <div class="col-sm-7">
