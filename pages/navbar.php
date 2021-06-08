@@ -23,6 +23,7 @@
             <a class="nav-item nav-link" href="cv.php">About me</a>
             <a class="nav-item nav-link" href="history.php">About city</a>
             <a class="nav-item nav-link" href="gallery.php">Gallery</a>
+            <a class="nav-item nav-link" href="contact.php">Contact</a>
         </div>
     </div>
 </nav>
