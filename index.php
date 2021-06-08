@@ -39,6 +39,7 @@
                 <a class="nav-item nav-link" href="pages/cv.php">About me</a>
                 <a class="nav-item nav-link" href="pages/history.php">About city</a>
                 <a class="nav-item nav-link" href="pages/gallery.php">Gallery</a>
+                <a class="nav-item nav-link" href="pages/contact.php">Contact</a>
             </div>
         </div>
     </nav>
@@ -78,9 +79,12 @@
             </div>
             <div class="col-sm right-col">
                 <h1>Sarajevo</h1>
-                <p>Sarajevo is the capital city and largest city of Bosnia and Hercegovina.Sarajevo is the political, financial,
+                <p>Sarajevo is the capital city and largest city of Bosnia and Hercegovina.Sarajevo is the political,
+                    financial,
                     social and cultural center of Bosnia and Herzegovina...</p>
-                <a href="pages/history.php"><button class="default-btn">More</button></a>
+                <a href="pages/history.php">
+                    <button class="default-btn">More</button>
+                </a>
             </div>
         </div>
         <div class="row miljacka-row" id="container">
