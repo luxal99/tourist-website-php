@@ -36,10 +36,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="pages/cv.php">About me</a>
-                <a class="nav-item nav-link" href="pages/history.php">About city</a>
-                <a class="nav-item nav-link" href="pages/gallery.php">Gallery</a>
-                <a class="nav-item nav-link" href="pages/contact.php">Contact</a>
+                <a class="nav-item nav-link" href="pages/cv.html">About me</a>
+                <a class="nav-item nav-link" href="pages/history.html">About city</a>
+                <a class="nav-item nav-link" href="pages/gallery.html">Gallery</a>
+                <a class="nav-item nav-link" href="pages/contact.html">Contact</a>
             </div>
         </div>
     </nav>
@@ -144,7 +144,7 @@
     });
 
     function showBigPicture($event) {
-        location.href = `pages/picture.php`;
+        location.href = `pages/picture.html?q=${$event.target.src}`;
 
     }
 </script>
