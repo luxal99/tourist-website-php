@@ -4,131 +4,97 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-    <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="icon" href="../assets/img/img1/nis-grb-veliki1.png">
-    <link rel="stylesheet" href="../css/gallery.css">
+    <title>Gallery</title>
+    <style>
+        .container {
+            margin: auto;
+            width: 960px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+            margin: .5em;
+        }
+
+        .navbar {
+            text-align: center;
+            margin: 2em 0;
+            background-color: #920fba;
+            padding: 2em;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light ">
-    <a class="navbar-brand" href="../index.html"><img class="img-fluid" src="../assets/img/img1/nis-grb-veliki1.png"
-                                                      width="50px"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link" href="cv.html">About me</a>
-            <a class="nav-item nav-link" href="about-city.html">About city</a>
-            <a class="nav-item nav-link" href="gallery.html">Gallery</a>
-            <a class="nav-item nav-link" href="form.html">Leave a message</a>
+<nav>
+    <a href="../index.html"><img src="../assets/img/img1/nis-grb-veliki1.png"
+                                 width="50px"></a>
+    <div>
+        <div class="navbar">
+            <a href="cv.html">About me</a>
+            <a href="about-city.html">About city</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="form.html">Leave a message</a>
         </div>
     </div>
 </nav>
 
-<div class="content">
+<div class="container">
     <h1>Gallery</h1>
-    <div class="gradient-divider"></div>
-
-    <div class="swiper-container swiper text-center" style="margin-top: 5em">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="../assets/img/img4/kazandzijsko-sokace-tinkers-alley-1170x521.jpg"
-                     onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/img4/park-svetog-Save-u-Nisu.jpg" onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/img5/Saborna_crkva_u_Nisu3.jpg" onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/img2/1280x0_MEDIJANA-MOZAIK-VANJA-KESER-JV14.jpg" onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/img3/Delta-Planet-Niš2.jpg" onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/img3/NisGradGmaps.jpg" onclick="showBigPicture(event)">
-            </div>
-
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+    <div>
+        <img src="../assets/img/img4/kazandzijsko-sokace-tinkers-alley-1170x521.jpg"
+             onclick="location.href='big-picture.html?q='+event.target.src">
+    </div>
+    <div>
+        <img src="../assets/img/img4/park-svetog-Save-u-Nisu.jpg"
+             onclick="location.href='big-picture.html?q='+event.target.src">
+    </div>
+    <div>
+        <img src="../assets/img/img5/Saborna_crkva_u_Nisu3.jpg"
+             onclick="location.href='big-picture.html?q='+event.target.src">
+    </div>
+    <div>
+        <img src="../assets/img/img2/1280x0_MEDIJANA-MOZAIK-VANJA-KESER-JV14.jpg"
+             onclick="location.href='big-picture.html?q='+event.target.src">
+    </div>
+    <div>
+        <img src="../assets/img/img3/Delta-Planet-Niš2.jpg"
+             onclick="location.href='big-picture.html?q='+event.target.src">
+    </div>
+    <div>
+        <img src="../assets/img/img3/NisGradGmaps.jpg" onclick="location.href='big-picture.html?q='+event.target.src">
     </div>
     <h1 class="mt-4">Gallery</h1>
     <div class="gradient-divider"></div>
 
-    <div class="swiper-container swiper text-center" style="margin-top: 5em">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="../assets/img/second-gallery/1.jpg" id="first-picture"
-                     onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/second-gallery/2.jpg"
-                     onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/second-gallery/3.jpg"
-                     onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/second-gallery/4.jpg"
-                     onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/second-gallery/5.jpg"
-                     onclick="showBigPicture(event)">
-            </div>
-            <div class="swiper-slide">
-                <img src="../assets/img/second-gallery/6.jpg"
-                     onclick="showBigPicture(event)">
-            </div>
-
-
+    <div style="margin-top: 5em">
+        <div>
+            <img src="../assets/img/second-gallery/1.jpg" id="first-picture"
+                 onclick="location.href='big-picture.html?q='+event.target.src">
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div>
+            <img src="../assets/img/second-gallery/2.jpg"
+                 onclick="location.href='big-picture.html?q='+event.target.src">
+        </div>
+        <div>
+            <img src="../assets/img/second-gallery/3.jpg"
+                 onclick="location.href='big-picture.html?q='+event.target.src">
+        </div>
+        <div>
+            <img src="../assets/img/second-gallery/4.jpg"
+                 onclick="location.href='big-picture.html?q='+event.target.src">
+        </div>
+        <div>
+            <img src="../assets/img/second-gallery/5.jpg"
+                 onclick="location.href='big-picture.html?q='+event.target.src">
+        </div>
+        <div>
+            <img src="../assets/img/second-gallery/6.jpg"
+                 onclick="location.href='big-picture.html?q='+event.target.src">
+        </div>
     </div>
 </div>
-<script type="module">
-    import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
-
-    let swiper = new Swiper(".swiper", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        slidesPerView: 2,
-        spaceBetween: 50,
-        loop: true
-    });
-
-</script>
-<script>
-    function showBigPicture($event) {
-        location.href = `big-picture.html?q=${$event.target.src}`;
-    }
-</script>
 </body>
 </html>
